@@ -7,8 +7,8 @@ import './WeatherDashboard.css'
 const today = new Date();
 
 function WeatherDashboard({ location, data, overallData = {},  onLocationSearch, noLocationFound }) {
-    const {hourly = [], daily = []} = overallData || {};
-    const todayHours = hourly.filter(hour => new Date(hour.dt * 1000).getDate() == today.getDate())
+    const {hourly = []} = overallData || {};
+    const todayHours = hourly.filter(hour => new Date(hour.dt * 1000).getDate() === today.getDate())
     return (
         <main className="ui__app">
             <Header noLocationFound={noLocationFound} onSearch={onLocationSearch} data={data} />

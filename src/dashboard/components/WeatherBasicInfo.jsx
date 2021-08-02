@@ -5,9 +5,9 @@ import WeatherNoLocation from './WeatherNoLocation';
 const IMAGE_BASE_PATH = process.env.REACT_APP_ICON_URL;
 
 function WeatherBasicInfo({ data = {}, noLocationFound = false }) {
-    const { name = "", main = {}, weather = [], wind = {}, visibility = 0 } = data || {};
+    const {  main = {}, weather = [], wind = {}, visibility = 0 } = data || {};
     const { temp = 0, feels_like = 0, pressure = 0, humidity = 0 } = main;
-    const { speed = 0, deg = 0, gust } = wind;
+    const { speed = 0 } = wind;
     const [weatherInfo = {}] = weather;
     
     return noLocationFound ? <WeatherNoLocation /> : <section className="ui__app__info">
