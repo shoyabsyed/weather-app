@@ -1,0 +1,31 @@
+.ui__app__info {
+    padding: 0;
+    margin: 1em 0;
+    
+}
+
+.ui__app__info__temp {
+    font-size: 6.5em;
+    font-weight: 300;
+}
+
+.ui__app__info__weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25em;
+    padding-right: 3em;
+    flex: 1;
+    background-color: #dadada;
+    box-shadow: 0 8px 16px  rgba(0, 0, 0, .2) inset;
+}
+
+.ui__app__info__temp__feels {
+    text-transform: capitalize;
+}
+
+.ui__app__info__details {
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+}

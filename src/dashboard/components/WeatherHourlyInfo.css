@@ -1,0 +1,59 @@
+.ui__app__hourly {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ui__app__hourly__item {
+    width: calc(100% / 5 - 8px);
+    margin: 4px;
+    padding: 1em;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: .5em;
+    font-size: small;
+    justify-content: space-between;
+}
+
+.ui__app__hourly__item .ui__app__hourly__item__header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.ui__app__hourly__item__header .ui__label__title {
+    display: block;
+}
+
+.ui__app__hourly__item__header .ui__label__subtitle {
+    display: block;
+    color: rgb(175, 175, 175);
+    text-transform: capitalize;
+}
+
+.ui__app__hourly__item__header .ui__img {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,.35));
+    margin-left: -12px;
+    margin-top: -10px;
+}
+
+.ui__weather__info {
+    display: flex;
+    margin-top: 4px;
+}
+
+.ui__weather__info h3 {
+    font-weight: 300;
+    font-size: 2em;
+}
+
+@media screen and (max-width: 720px) {
+    .ui__app__hourly__item {
+        width: calc(100% / 3 - 8px);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ui__app__hourly__item {
+        width: calc(100% / 2 - 8px);
+    }
+}

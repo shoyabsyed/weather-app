@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #F8F6EE;
+  color: #555555;
+  font-family: "Lato", sans-serif;
+}
+#root {
+  height: 100%;
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  padding: 1em;
+}

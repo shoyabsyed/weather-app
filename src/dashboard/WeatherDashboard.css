@@ -1,0 +1,10 @@
+.ui__app {
+    background-color: #fff;
+    max-width: 72em;
+    margin: 0 auto;
+    flex: 1;
+    border-radius: .5em;
+    padding: 1.5em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+}
+

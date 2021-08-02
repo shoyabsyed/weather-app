@@ -1,0 +1,46 @@
+.ui__app__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.ui__app__header__info .ui__label__date {
+  font-weight: 400;
+  font-size: 0.85em;
+  color: #7f7f7f;
+}
+
+.ui__app__header__search {
+  background: rgb(236, 236, 236);
+  padding: 0.5em .75em;
+  padding-right: calc(.75em + 12px);
+  border-radius: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: auto;
+}
+
+.ui__app__header__search input {
+  border: none;
+  background: transparent;
+  padding: .25em;
+  margin: 0 .25em;
+}
+
+.ui__app__header__search .ui__action__search {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    background: none;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.ui__app__header__search input:hover,
+.ui__app__header__search input:focus {
+    outline: none;
+}
